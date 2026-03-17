@@ -106,27 +106,21 @@ mongodb.release.autoDownload.enterprise=<%=$mongodb::opsmanager::release_autodow
 <% if $mongodb::opsmanager::user_svc_class { -%>
 mms.userSvcClass=<%=$mongodb::opsmanager::user_svc_class -%>
 <% } -%>
-
 <% if $mongodb::opsmanager::snapshot_interval { -%>
 brs.snapshotSchedule.interval=<%=$mongodb::opsmanager::snapshot_interval -%>
 <% } -%>
-
 <% if $mongodb::opsmanager::snapshot_interval_retention { -%>
 brs.snapshotSchedule.retention.base=<%=$mongodb::opsmanager::snapshot_retention -%>
 <% } -%>
-
 <% if $mongodb::opsmanager::snapshot_daily_retention { -%>
 brs.snapshotSchedule.retention.daily=<%=$mongodb::opsmanager::snapshot_daily_retention -%>
 <% } -%>
-
 <% if $mongodb::opsmanager::snapshot_weekly_retention { -%>
 brs.snapshotSchedule.retention.weekly=<%=$mongodb::opsmanager::snapshot_weekly_retention -%>
 <% } -%>
-
 <% if $mongodb::opsmanager::snapshot_monthly_retention { -%>
 brs.snapshotSchedule.retention.monthly=<%=$mongodb::opsmanager::snapshot_monthly_retention -%>
 <% } -%>
-
 <% if $mongodb::opsmanager::versions_directory { -%>
 automation.versions.directory=<%=$mongodb::opsmanager::versions_directory -%>
 <% } -%>
