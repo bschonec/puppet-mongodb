@@ -126,3 +126,12 @@ brs.snapshotSchedule.retention.monthly=<%=$mongodb::opsmanager::snapshot_monthly
 <% if $mongodb::opsmanager::versions_directory { -%>
 automation.versions.directory=<%=$mongodb::opsmanager::versions_directory -%>
 <% } -%>
+<% if $mongodb::opsmanager::versions_source { -%>
+automation.versions.source=<%=$mongodb::opsmanager::versions_source -%>
+<% } -%>
+<% if $mongodb::opsmanager::release_autodownload { -%>
+mongodb.release.autoDownload=<%=$mongodb::opsmanager::release_autodownload -%>
+<% } -%>
+<% if $mongodb::opsmanager::release_autodownload_enterprise { -%>
+mongodb.release.autoDownload.enterprise=<%=$mongodb::opsmanager::release_autodownload_enterprise -%>
+<% } -%>
